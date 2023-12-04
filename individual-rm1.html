@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Campaign Program</title>
+    <link rel="stylesheet" href="donation.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="iium-logo.png" alt="iium-logo" height="150">
+            <img src="save-money.png" alt="rm1 Campaign" height="150">
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">RM1 Campaign</h1>
+            <p >Join us in making a difference! Every Ringgit matters, and together we can create positive change. Donate today and be the reason someone's tomorrow is brighter. Together, we can make a world of difference.</p>
+            <p style="font-style: italic; font-family: Allerta Stencil;" >"Let your contributions be perpetual for the pleasure of Allah swt"</p>
+            <p style="font-style: italic; font-family: Allerta Stencil;"">Quranic Verse: Al-Baqarah:261</p>
+        </header>
+        <section id="form">
+            <h2>Monthly Salary Deduction Form</h2>
+            <form id="deductionForm" onsubmit="validateForm(); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="staffid">Staff No:</label>
+                <input type="text" id="staffid" name="staffid" required>
+    
+                <label for="kcdio">K/C/D/I/O:</label>
+                <input type="text" id="kcdio" name="kcdio" required>
+    
+                <label for="contactno">Contact No:</label>
+                <input type="text" id="contactno" name="contactno" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="amount">Deduction Amount (RM):</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <p></p>
+                <label>The above salary deduction will take effect from: </label>
+                <input type="month" id="start" name="duration" required>
+                <label>Until:</label>
+                <input type="month" id="finish" name="duration" required>
+                <p></p>
+
+                <label for="kulliyyah">For Kulliyyah:</label>
+                <select name="kulliyyah" id="kulliyyah">
+                    <option value="koed">Kulliyyah of Education</option>
+                    <option value="kaed">Kulliyyah of Architecture and Environmental Design</option>
+                    <option value="irkhs">AbdulHamid AbuSulayman Kulliyyah of Islamic Revealed Knowledge and Human Sciences</option>
+                    <option value="kenms">Kulliyyah of Economics and Management Sciences</option>
+                    <option value="koe">Kulliyyah of Education</option>
+                    <option value="kict">Kulliyyah of information and Communication Technology</option>
+                    <option value="aikol">Ahmad Ibrahim Kulliyyah of Law</option>
+                    <option value="none">--</option>
+                </select>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
+
+        </section>
+        <aside>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">¿About Us?</h2>
+            <img src="charity.png" alt="logo" width="100">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eius cumque cum hic saepe voluptas vero modi aliquid odit, ducimus dolores eos, accusantium officiis magni facere tenetur corporis. Quam, accusamus?</p>
+
+        </aside>
+
+            <nav>
+                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us  &#9742</h2>
+                <p>Level 3, Rectory IIUM P.O. Box 10 50728 Kuala Lumpur</p>
+                <p>Tel: 03 6196 4268</p>
+                <p>Email: ief@iium.edu.my</p>
+                <p>Website: www.iium.edu.my/ief</p>
+                <p>Facebook: www.facebook.com/ief.official/</p>
+            </nav>
+
+    </div>
+    <script src="donation.js"></script>
+    
+</body>
+</html>
