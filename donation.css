@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+header{
+    grid-column: 1/span 4;
+    grid-row: 1;
+    background-color: #D3AC2A;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+section{
+    grid-column: 1/span 4;
+    grid-row: 2;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+form {
+    max-width: 600px;
+    grid-row: 2;
+    margin: auto;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #2d64b6;
+    color: #fff;
+    padding: 10px 15px;
+    border: #2d64b6;
+}
+nav{
+    grid-row: 3;
+    grid-column: 1/span 4;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    background-color: #333D51;
+    text-align: center;
+}
